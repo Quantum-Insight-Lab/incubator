@@ -657,6 +657,47 @@
     background: #fff;
   }
 
+  a.report-pdf-thumb-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    align-self: center;
+  }
+
+  .report-pdf-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    padding: 22px 16px;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  a.report-pdf-thumb-link:hover .report-pdf-thumb {
+    border-color: var(--ink);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  }
+
+  .report-pdf-thumb .thumb-kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .report-pdf-thumb .thumb-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--ink);
+  }
+
   .report-meta h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
@@ -1163,7 +1204,7 @@
       <h2>Доклад, исследование, петиция</h2>
     </div>
     <p class="lead">
-      Дашборд — сжатая визуализация. Ниже — аналитический доклад (PDF), исходное исследование и петиция на Change.org. Во внешних ссылках заданы UTM-параметры, чтобы в отчётах площадок отличать трафик с этой страницы.
+      Дашборд — сжатая визуализация. Ниже — аналитический доклад (PDF), публикация исследования в PDF, интерактивная страница исследования и петиция на Change.org. Во внешних ссылках заданы UTM-параметры, чтобы в отчётах площадок отличать трафик с этой страницы.
     </p>
 
     <div class="shelf">
@@ -1190,9 +1231,34 @@
         </div>
       </details>
 
+      <details class="shelf-block" id="research-pdf-panel">
+        <summary>
+          <span>PDF «Цифровая изоляция России»: цена блокировок и парадоксы элиты</span>
+          <span class="chev">›</span>
+        </summary>
+        <div class="shelf-body">
+          <div class="report-grid">
+            <a class="report-pdf-thumb-link" href="Цифровая%20изоляция%20России_%20цена%20блокировок%20и%20парадоксы%20элиты.pdf?utm_source=github_pages&amp;utm_medium=dashboard&amp;utm_campaign=free_internet_2026&amp;utm_content=research_pdf" target="_blank" rel="noopener noreferrer" title="Открыть PDF исследования">
+              <div class="report-pdf-thumb">
+                <div class="thumb-kicker">PDF · исследование</div>
+                <div class="thumb-title">Цифровая изоляция России: цена блокировок и парадоксы элиты</div>
+              </div>
+            </a>
+            <div class="report-meta">
+              <div class="kicker-line">Открытые данные</div>
+              <h3>Цена блокировок и парадоксы элиты</h3>
+              <p>Полный текст в PDF — один файл с разделами, графикой и ссылками на источники. Файл в корне репозитория: <em>Цифровая изоляция России_ цена блокировок и парадоксы элиты.pdf</em>.</p>
+              <div class="btn-row">
+                <a class="btn btn--fill" href="Цифровая%20изоляция%20России_%20цена%20блокировок%20и%20парадоксы%20элиты.pdf?utm_source=github_pages&amp;utm_medium=dashboard&amp;utm_campaign=free_internet_2026&amp;utm_content=research_pdf_download" target="_blank" rel="noopener noreferrer">Скачать / открыть PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
       <details class="shelf-block" id="research-panel">
         <summary>
-          <span>Исследование «Цифровая изоляция России»</span>
+          <span>Исследование «Цифровая изоляция России» (веб-страница)</span>
           <span class="chev">›</span>
         </summary>
         <div class="shelf-body">
